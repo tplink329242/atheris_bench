@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python sanitize_fuzzer.py seeds_corpus
+python -u sanitize_fuzzer.py seeds_corpus

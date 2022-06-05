@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python fuzz_urlparse.py seeds_corpus
+python -u fuzz_urlparse.py seeds_corpus

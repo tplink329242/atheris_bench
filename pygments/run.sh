@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python fuzz_guesser.py seeds_corpus
+python -u fuzz_guesser.py seeds_corpus

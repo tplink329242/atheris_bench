@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python fuzz_loader.py seeds_corpus
+python -u fuzz_loader.py seeds_corpus

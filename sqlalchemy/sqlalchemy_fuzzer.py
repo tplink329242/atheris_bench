@@ -17,7 +17,7 @@
 import sys
 import atheris
 
-with atheris.instrument_imports():
+with atheris.instrument_imports(key="sqlalchemy"):
   import sqlalchemy
   from sqlalchemy import create_engine
   from sqlalchemy import Table, Column, Integer, String, MetaData

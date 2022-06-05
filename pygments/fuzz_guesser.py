@@ -15,11 +15,12 @@
 # limitations under the License.
 
 import atheris
-
 import sys
-import pygments
-import pygments.lexers
-import pygments.util
+
+with atheris.instrument_imports(key="pygments"):
+  import pygments
+  import pygments.lexers
+  import pygments.util
 
 def TestOneInput(data: bytes) -> int:
   try:
@@ -29,6 +30,5 @@ def TestOneInput(data: bytes) -> int:
   return 0
 
 
-atheris.instrument_all()
 atheris.Setup(sys.argv, TestOneInput)
 atheris.Fuzz()
